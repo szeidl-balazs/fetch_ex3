@@ -1,0 +1,64 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightsalmon;	
+}
+
+h1 {
+	color: lightgreen;
+	font-size: 5em;
+	text-shadow: #4b4848 3px 5px;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.postlist-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+	.post-container {
+		background-color: black;
+		color: lightgreen;
+		border-radius: 10px;
+		margin: 20px;
+		padding: 10px;
+		width: 250px;
+		box-shadow: #4b4848 3px 5px;
+		
+		div::first-letter {
+			font-size: 1.4em;
+			text-transform: capitalize;
+			font-weight: 800;
+			color: orange;
+		}
+
+		.posttitle-container {
+			display: flex;
+			justify-content: center;
+			margin: 10px;
+			font-size: 1.5em;
+			font-weight: 800;			
+		}
+	}
+
+
+
+
+@media screen and (min-width: 760px) {
+	.post-container {
+		width: 400px;
+	}
+}

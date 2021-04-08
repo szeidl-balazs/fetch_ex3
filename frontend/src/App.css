@@ -1,0 +1,82 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: lightsalmon;
+}
+
+h1 {
+  color: lightgreen;
+  font-size: 5em;
+  text-shadow: #4b4848 3px 5px;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postlist-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.post-container {
+  background-color: black;
+  color: lightgreen;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  width: 250px;
+  -webkit-box-shadow: #4b4848 3px 5px;
+          box-shadow: #4b4848 3px 5px;
+}
+
+.post-container div::first-letter {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: orange;
+}
+
+.post-container .posttitle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 760px) {
+  .post-container {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
